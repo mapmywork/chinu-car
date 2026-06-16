@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
+  <!-- Background Circle with Royal Blue -->
+  <circle cx="50" cy="50" r="46" fill="#0f4c81" stroke="#d4af37" stroke-width="4" />
+  
+  <!-- Crown Element (Gold) -->
+  <path d="M30 65 L35 45 L50 55 L65 45 L70 65 Z" fill="#d4af37" />
+  
+  <!-- Car Silhouette Element (Warm White / Gold) -->
+  <path d="M32 65 C32 65 38 60 50 60 C62 60 68 65 68 65 L72 68 C72 68 65 72 50 72 C35 72 28 68 28 68 Z" fill="#fafaf9" />
+  
+  <!-- Star accents -->
+  <circle cx="50" cy="40" r="3" fill="#d4af37" />
+  <circle cx="35" cy="40" r="2" fill="#d4af37" />
+  <circle cx="65" cy="40" r="2" fill="#d4af37" />
+</svg>
