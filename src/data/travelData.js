@@ -27,7 +27,7 @@ export const SERVICES = [
     title: 'Airport Transfers',
     description: 'Punctual pickup and drop services from Jodhpur, Jaipur, and Udaipur airports.',
     image: 'https://images.bhaskarassets.com/web2images/1884/2026/05/06/bengairport-1_1778054493.jpg',
-    tag: '24/7 Service'
+    tag: '24/7 Servicess'
   },
   {
     id: 'family-tours',
