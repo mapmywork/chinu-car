@@ -1,100 +1,73 @@
-import { ShieldCheck, CircleDollarSign, CheckSquare, Compass, Car, Flame, Building2, HelpCircle, Layers } from 'lucide-react';
+import React from 'react';
+import { ShieldCheck, CircleDollarSign, Car, Zap, Clock, Users, Star, Phone, CarFront, MapPin } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const USPs = [
-  {
-    id: 1,
-    title: 'Trusted Service',
-    description: 'Highly rated by local authorities & private clients. Safety first, always.',
-    icon: ShieldCheck
-  },
-  {
-    id: 2,
-    title: 'Affordable Pricing',
-    description: 'Clear, upfront invoicing. No hidden charges or surprise taxes.',
-    icon: CircleDollarSign
-  },
-  {
-    id: 3,
-    title: 'Custom Fleet Booking',
-    description: 'Get precisely the vehicle layout you need, from comfortable sedans to large group cruisers.',
-    icon: Layers
-  },
-  {
-    id: 4,
-    title: 'Rajasthan Specialists',
-    description: 'Drivers who know every sand dune, palace route, and local food corner.',
-    icon: Compass
-  },
-  {
-    id: 5,
-    title: 'Comfortable Vehicles',
-    description: 'Clean, modern, air-conditioned fleet with sanitized seating layouts.',
-    icon: Car
-  },
-  {
-    id: 6,
-    title: 'Family Friendly',
-    description: 'Safe for senior citizens and children. Custom halts and breaks allowed.',
-    icon: Flame
-  },
-  {
-    id: 7,
-    title: 'Corporate Solutions',
-    description: 'Dedicated accounts for businesses with punctual executive transfers.',
-    icon: CheckSquare
-  },
-  {
-    id: 8,
-    title: '24/7 Road Support',
-    description: 'Dedicated operator line. Always active for roadside assistance and changes.',
-    icon: HelpCircle
-  }
+  { title: 'Self Drive Available', description: 'Freedom to drive at your own schedule and pace.', icon: CarFront, color: 'bg-blue-50 text-accent border-blue-100' },
+  { title: 'Luxury Fleet', description: 'Mercedes S-Class, Fortuner, XUV700 and more.', icon: Star, color: 'bg-yellow-50 text-yellow-600 border-yellow-100' },
+  { title: 'Daily Rental', description: 'Flexible daily plans starting from just one day.', icon: Car, color: 'bg-green-50 text-green-600 border-green-100' },
+  { title: 'Weekly Rental', description: 'Save more with our curated weekly packages.', icon: Clock, color: 'bg-indigo-50 text-indigo-600 border-indigo-100' },
+  { title: 'Monthly Rental', description: 'Best value for long-term requirements.', icon: CircleDollarSign, color: 'bg-emerald-50 text-emerald-600 border-emerald-100' },
+  { title: 'Quick Booking', description: 'Book instantly via WhatsApp or phone call.', icon: Zap, color: 'bg-orange-50 text-orange-600 border-orange-100' },
+  { title: 'Well Maintained Cars', description: 'Every car is serviced, sanitized, and insured.', icon: ShieldCheck, color: 'bg-cyan-50 text-cyan-600 border-cyan-100' },
+  { title: '24/7 Support', description: 'Round the clock assistance for all your needs.', icon: Phone, color: 'bg-red-50 text-red-600 border-red-100' },
+  { title: 'Premium Gurgaon Service', description: 'Serving Gurgaon & NCR with pride since day one.', icon: MapPin, color: 'bg-purple-50 text-purple-600 border-purple-100' },
+  { title: 'Group & Family Travel', description: 'MPVs and SUVs for groups up to 7 passengers.', icon: Users, color: 'bg-pink-50 text-pink-600 border-pink-100' },
 ];
 
 export default function WhyChooseUs() {
   return (
-    <section id="why-us" className="py-24 bg-white relative">
-      {/* Visual gold lines decoration */}
-      <div className="absolute top-1/2 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-gold/10 to-transparent pointer-events-none"></div>
+    <section id="why-us" className="py-24 bg-background relative overflow-hidden">
+      {/* Decorative background */}
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute top-20 left-0 w-96 h-96 bg-accent/3 rounded-full filter blur-3xl" />
+        <div className="absolute bottom-20 right-0 w-96 h-96 bg-blue-400/3 rounded-full filter blur-3xl" />
+      </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+
         {/* Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-          <span className="text-xs font-bold uppercase tracking-[0.25em] text-gold block">
-            Our Key Advantages
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="text-center max-w-3xl mx-auto mb-16 space-y-4"
+        >
+          <span className="text-xs font-black uppercase tracking-[0.3em] text-accent block">
+            Why Chinnu Car Rentals
           </span>
-          <h2 className="font-serif text-3xl sm:text-4xl font-extrabold text-primary-dark tracking-tight">
-            Why Choose Professional Cab Service?
+          <h2 className="text-4xl sm:text-5xl font-black text-primary tracking-tight">
+            The Smart{' '}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent to-blue-400">Choice</span>
           </h2>
-          <div className="w-20 h-1 bg-gold mx-auto rounded-full"></div>
-          <p className="text-sm text-stone-500 font-light leading-relaxed">
-            Dhan Singh's agency prioritizes safety, punctuality, and comfort above all else, ensuring that your journey in the desert kingdom is memorable and stress-free.
+          <div className="w-16 h-1 bg-gradient-to-r from-accent to-blue-400 mx-auto rounded-full" />
+          <p className="text-sm text-gray-500 font-light leading-relaxed">
+            Gurgaon's most trusted self-drive car rental service, with a premium fleet and unmatched customer care.
           </p>
-        </div>
+        </motion.div>
 
         {/* USP Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-5">
           {USPs.map((usp, idx) => {
             const Icon = usp.icon;
             return (
               <motion.div
-                key={usp.id}
-                initial={{ opacity: 0, y: 35 }}
+                key={usp.title}
+                initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: idx * 0.08, duration: 0.5 }}
-                className="bg-stone-50 rounded-3xl p-6 sm:p-8 border border-gold/10 hover:border-gold shadow-sm hover:shadow-royal transition-all duration-300 text-left flex flex-col items-start space-y-4 group"
+                transition={{ delay: idx * 0.06, duration: 0.5 }}
+                whileHover={{ y: -5, scale: 1.02 }}
+                className="bg-white rounded-2xl p-6 border border-silver/20 hover:border-accent/30 shadow-premium hover:shadow-glow transition-all duration-300 flex flex-col items-start space-y-3 group cursor-default"
               >
-                <div className="p-3 bg-primary/5 rounded-2xl text-gold group-hover:bg-primary group-hover:text-white transition-all duration-300">
-                  <Icon className="w-6 h-6 stroke-[1.5]" />
+                <div className={`p-2.5 rounded-xl border ${usp.color} group-hover:scale-110 transition-transform duration-300`}>
+                  <Icon className="w-5 h-5 stroke-[1.5]" />
                 </div>
-                <div className="space-y-1.5">
-                  <h3 className="font-serif text-base font-bold text-primary-dark group-hover:text-gold transition-colors duration-200">
-                    {usp.title}
+                <div className="space-y-1">
+                  <h3 className="font-bold text-primary text-sm leading-snug group-hover:text-accent transition-colors">
+                    ✓ {usp.title}
                   </h3>
-                  <p className="text-xs text-stone-500 font-light leading-relaxed">
+                  <p className="text-[11px] text-gray-400 font-light leading-relaxed">
                     {usp.description}
                   </p>
                 </div>

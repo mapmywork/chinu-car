@@ -8,7 +8,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 export default function BookingForm({ embedded = false }) {
   const [showModal, setShowModal] = useState(false);
   const [bookingDetails, setBookingDetails] = useState(null);
-  
+
   const {
     register,
     handleSubmit,
@@ -53,9 +53,9 @@ export default function BookingForm({ embedded = false }) {
   const triggerWhatsAppRedirect = () => {
     if (!bookingDetails) return;
     const { name, phone, pickup, destination, travelDate, serviceType, refId, estimatedPrice } = bookingDetails;
-    
+
     const textPayload = `Hello Dhan Singh (Professional Cab Service),%0A%0AI would like to book a trip! Here are my inquiry details:%0A%0A*Ref:* ${refId}%0A*Name:* ${name}%0A*Phone:* ${phone}%0A*Service:* ${serviceType}%0A*Route:* ${pickup} to ${destination}%0A*Date:* ${travelDate}%0A*Est. Price:* ${estimatedPrice}%0A%0APlease confirm availability. Thank you!`;
-    
+
     const waUrl = `https://wa.me/${CONTACT_INFO.cleanPhones[0]}?text=${textPayload}`;
     window.open(waUrl, '_blank');
     setShowModal(false);
@@ -90,11 +90,10 @@ export default function BookingForm({ embedded = false }) {
               <input
                 type="text"
                 placeholder="Enter full name"
-                className={`w-full text-sm py-3 pl-10 pr-4 rounded-xl border outline-none transition-all ${
-                  embedded
+                className={`w-full text-sm py-3 pl-10 pr-4 rounded-xl border outline-none transition-all ${embedded
                     ? 'bg-stone-50 border-stone-200 text-charcoal focus:bg-white focus:border-gold focus:ring-1 focus:ring-gold'
                     : 'bg-primary-dark/40 border-stone-700 text-white placeholder-stone-500 focus:bg-primary-dark/60 focus:border-gold'
-                }`}
+                  }`}
                 {...register('name', { required: 'Name is required' })}
               />
             </div>
@@ -111,11 +110,10 @@ export default function BookingForm({ embedded = false }) {
               <input
                 type="tel"
                 placeholder="Enter mobile number"
-                className={`w-full text-sm py-3 pl-10 pr-4 rounded-xl border outline-none transition-all ${
-                  embedded
+                className={`w-full text-sm py-3 pl-10 pr-4 rounded-xl border outline-none transition-all ${embedded
                     ? 'bg-stone-50 border-stone-200 text-charcoal focus:bg-white focus:border-gold focus:ring-1 focus:ring-gold'
                     : 'bg-primary-dark/40 border-stone-700 text-white placeholder-stone-500 focus:bg-primary-dark/60 focus:border-gold'
-                }`}
+                  }`}
                 {...register('phone', {
                   required: 'Phone number is required',
                   pattern: { value: /^[0-9+\s-]{10,15}$/, message: 'Invalid phone format' }
@@ -133,11 +131,10 @@ export default function BookingForm({ embedded = false }) {
             <div className="relative">
               <Settings className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-gold" />
               <select
-                className={`w-full text-sm py-3 pl-10 pr-4 rounded-xl border outline-none transition-all appearance-none cursor-pointer ${
-                  embedded
+                className={`w-full text-sm py-3 pl-10 pr-4 rounded-xl border outline-none transition-all appearance-none cursor-pointer ${embedded
                     ? 'bg-stone-50 border-stone-200 text-charcoal focus:bg-white focus:border-gold focus:ring-1 focus:ring-gold'
                     : 'bg-primary-dark/40 border-stone-700 text-stone-300 focus:bg-primary-dark/60 focus:border-gold'
-                }`}
+                  }`}
                 {...register('serviceType', { required: 'Please select a service' })}
               >
                 <option value="Cab Booking" className="text-charcoal bg-white">Cab Booking</option>
@@ -159,11 +156,10 @@ export default function BookingForm({ embedded = false }) {
                 <input
                   type="text"
                   placeholder="e.g. Jodhpur Airport"
-                  className={`w-full text-sm py-3 pl-10 pr-4 rounded-xl border outline-none transition-all ${
-                    embedded
+                  className={`w-full text-sm py-3 pl-10 pr-4 rounded-xl border outline-none transition-all ${embedded
                       ? 'bg-stone-50 border-stone-200 text-charcoal focus:bg-white focus:border-gold focus:ring-1 focus:ring-gold'
                       : 'bg-primary-dark/40 border-stone-700 text-white placeholder-stone-500 focus:bg-primary-dark/60 focus:border-gold'
-                  }`}
+                    }`}
                   {...register('pickup', { required: 'Pickup is required' })}
                 />
               </div>
@@ -179,11 +175,10 @@ export default function BookingForm({ embedded = false }) {
                 <input
                   type="text"
                   placeholder="e.g. Jaisalmer Dunes"
-                  className={`w-full text-sm py-3 pl-10 pr-4 rounded-xl border outline-none transition-all ${
-                    embedded
+                  className={`w-full text-sm py-3 pl-10 pr-4 rounded-xl border outline-none transition-all ${embedded
                       ? 'bg-stone-50 border-stone-200 text-charcoal focus:bg-white focus:border-gold focus:ring-1 focus:ring-gold'
                       : 'bg-primary-dark/40 border-stone-700 text-white placeholder-stone-500 focus:bg-primary-dark/60 focus:border-gold'
-                  }`}
+                    }`}
                   {...register('destination', { required: 'Destination is required' })}
                 />
               </div>
@@ -201,11 +196,10 @@ export default function BookingForm({ embedded = false }) {
               <input
                 type="date"
                 min={new Date().toISOString().split('T')[0]}
-                className={`w-full text-sm py-3 pl-10 pr-4 rounded-xl border outline-none transition-all ${
-                  embedded
+                className={`w-full text-sm py-3 pl-10 pr-4 rounded-xl border outline-none transition-all ${embedded
                     ? 'bg-stone-50 border-stone-200 text-charcoal focus:bg-white focus:border-gold focus:ring-1 focus:ring-gold'
                     : 'bg-primary-dark/40 border-stone-700 text-stone-300 focus:bg-primary-dark/60 focus:border-gold'
-                }`}
+                  }`}
                 {...register('travelDate', { required: 'Travel date is required' })}
               />
             </div>
