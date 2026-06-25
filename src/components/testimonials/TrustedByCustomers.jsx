@@ -7,7 +7,13 @@ import c4 from '../../assets/c4.jpeg';
 import c5 from '../../assets/c5.jpeg';
 import c6 from '../../assets/c6.jpeg';
 
-
+const CUSTOMER_PHOTOS = [
+  c2,
+  c3,
+  c4,
+  c5,
+  c6,
+];
 export default function TrustedByCustomers() {
   // Double the array to make the infinite scroll seamless
   const scrollItems = [...CUSTOMER_PHOTOS, ...CUSTOMER_PHOTOS];
