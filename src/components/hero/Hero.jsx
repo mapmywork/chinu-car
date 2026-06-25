@@ -100,22 +100,23 @@ export default function Hero() {
             {/* Heading */}
             <div className="space-y-3">
               <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black leading-[1.05] tracking-tight">
-                Drive Your
+                Self Drive Car Rental<br/>
                 <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">
-                  Dream Car
+                  in Gurgaon
                 </span>
-                Today
               </h1>
               <p className="text-xl font-bold text-accent-light tracking-widest uppercase">
-                {CONTACT_INFO.name}
+                | {CONTACT_INFO.name}
               </p>
             </div>
 
             {/* Taglines */}
-            <div className="space-y-1">
-              <p className="text-lg text-white/80 font-light italic">Freedom To Drive · Drive Luxury. Drive Freedom.</p>
-              <p className="text-sm text-white/60">
-                Choose from economy, SUV, premium and luxury vehicles. Self drive or chauffeur-driven options available.
+            <div className="space-y-3 pr-4">
+              <p className="text-sm sm:text-base text-white/90 font-light leading-relaxed">
+                Looking for the best self drive car rental in Gurgaon? Welcome to Chinnu Car Rentals, your trusted destination for budget cars, premium sedans, SUVs, and 7-seater family cars on rent in Gurgaon and Delhi NCR.
+              </p>
+              <p className="text-sm text-white/70 font-light leading-relaxed">
+                Whether you need a car for daily use, weekend trips, outstation travel, business travel, family vacations, or airport pickup and drop, we offer a wide range of well-maintained petrol, diesel, CNG, manual, and automatic cars at affordable prices.
               </p>
             </div>
 

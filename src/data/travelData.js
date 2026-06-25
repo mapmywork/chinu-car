@@ -1,138 +1,216 @@
 export const SERVICES = [
   {
     id: 'self-drive',
-    title: 'Self Drive Rentals',
-    description: 'Experience the freedom of the open road with our premium self-drive cars.',
+    title: 'Self Drive Car Rental in Gurgaon',
+    description: 'Choose from hatchbacks, sedans, SUVs, and MPVs for local travel, business use, and weekend plans.',
     image: 'https://images.unsplash.com/photo-1549399542-7e3f8b79c341?q=80&w=600',
   },
   {
-    id: 'corporate-travel',
-    title: 'Corporate Travel',
-    description: 'Executive transportation solutions with our luxury fleet for corporate clients.',
+    id: 'suv-rental',
+    title: 'SUV Rental in Gurgaon',
+    description: 'Book premium SUVs like Thar, Scorpio, Scorpio N, XUV700, Creta, Venue, and Fronx for comfortable and stylish travel.',
+    image: 'https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?q=80&w=600',
+  },
+  {
+    id: '7-seater',
+    title: '7 Seater Car Rental in Gurgaon',
+    description: 'Need a family car or group travel option? Book Ertiga, Kia Carens, Scorpio S11, or Scorpio N for extra space and comfort.',
     image: 'https://images.unsplash.com/photo-1554469384-e58fac16e23a?q=80&w=600',
   },
   {
-    id: 'airport-transfer',
-    title: 'Airport Transfers',
-    description: 'Punctual pickup and drop services for seamless travel experiences.',
-    image: 'https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=600',
-  },
-  {
-    id: 'long-term',
-    title: 'Long Term Rentals',
-    description: 'Monthly and yearly rental plans tailored to your specific needs.',
+    id: 'budget-rental',
+    title: 'Budget Car Rental in Gurgaon',
+    description: 'Looking for an affordable self drive car? Our Swift, Baleno, Punch, and Taisor are perfect for cost-effective city and local use.',
     image: 'https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?q=80&w=600',
   },
   {
-    id: 'wedding',
-    title: 'Wedding Car Rental',
-    description: 'Make your special day unforgettable with our ultra-luxury vehicles.',
-    image: 'https://images.unsplash.com/photo-1519225421980-715cb0215aed?q=80&w=600',
-  },
-  {
-    id: 'weekend',
-    title: 'Weekend Trips',
-    description: 'Perfect SUVs for your weekend getaways and road trips.',
-    image: 'https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?q=80&w=600',
+    id: 'outstation-rental',
+    title: 'Outstation Car Rental from Gurgaon',
+    description: 'Planning a trip from Gurgaon to Jaipur, Chandigarh, Rishikesh, Agra, Delhi, or anywhere in North India? Book a comfortable self drive car and travel at your own pace.',
+    image: 'https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=600',
   }
 ];
 
 export const FLEET = [
   {
-    id: 's-class',
-    name: 'Mercedes-Benz S-Class',
-    type: 'Ultra Luxury',
-    idealFor: 'Corporate Executives, Luxury Travel, VIP Movement',
-    image: 'https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?q=80&w=800',
-    premium: true
+    id: 'swift',
+    name: 'Maruti Suzuki Swift 2024',
+    type: 'Hatchback',
+    idealFor: 'Daily commute, budget-friendly',
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ9_-s5TFfnddy9rI_5LsVcLqW7GrUZJ6rrxkin8UpLQ&s=10',
+    premium: false,
+    price: 2800,
+    fuelType: 'Petrol',
+    transmission: 'Manual',
+    seatingCapacity: '5 Seater'
   },
   {
-    id: 'fortuner',
-    name: 'Toyota Fortuner',
-    type: 'Flagship SUV',
-    idealFor: 'Luxury Experiences, VIP Travel',
-    image: 'https://images.unsplash.com/photo-1583122620177-3e11eb5a74e3?q=80&w=800',
-    premium: true
-  },
-  {
-    id: 'xuv700',
-    name: 'Mahindra XUV700',
-    type: 'Luxury SUV',
-    idealFor: 'Premium Travel, Executive Travel',
-    image: 'https://images.unsplash.com/photo-1632245889029-e406faaa34cd?q=80&w=800',
-    premium: true
-  },
-  {
-    id: 'scorpio-n',
-    name: 'Mahindra Scorpio N',
-    type: 'Premium SUV',
-    idealFor: 'Long Trips, Family Travel',
-    image: 'https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?q=80&w=800',
-    premium: true
-  },
-  {
-    id: 'thar-roxx',
-    name: 'Mahindra Thar Roxx',
-    type: 'Luxury Adventure',
-    idealFor: 'Premium Experiences',
-    image: 'https://imgd.aeplcdn.com/642x336/n/cw/ec/204996/thar-2025-exterior-right-front-three-quarter-5.png?isig=0&q=80',
-    premium: true
-  },
-  {
-    id: 'thar-rwd',
-    name: 'Mahindra Thar RWD',
-    type: 'Adventure SUV',
-    idealFor: 'Road Trips, Offbeat Travel',
-    image: 'https://stimg.cardekho.com/images/car-images/large/Mahindra/Thar/12264/1759493860311/STEALTH-BLACK_111111.jpg?impolicy=resize&imwidth=420',
-    premium: true
-  },
-  {
-    id: 'scorpio-s11',
-    name: 'Mahindra Scorpio S11',
-    type: 'SUV',
-    idealFor: 'Comfortable Road Journeys',
-    image: 'https://imgd.aeplcdn.com/1280x720/n/cw/ec/128413/scorpio-exterior-right-front-three-quarter-2.png?isig=0&q=80',
-    premium: false
+    id: 'baleno',
+    name: 'Maruti Suzuki Baleno 2024',
+    type: 'Premium Hatchback',
+    idealFor: 'City rides, family travel',
+    image: 'https://imgd.aeplcdn.com/664x374/n/cw/ec/102663/baleno-exterior-right-front-three-quarter-66.jpeg?isig=0&q=80',
+    premium: false,
+    price: 3200,
+    fuelType: 'Petrol + CNG',
+    transmission: 'Manual',
+    seatingCapacity: '5 Seater'
   },
   {
     id: 'ertiga',
     name: 'Maruti Suzuki Ertiga',
-    type: 'Family MPV',
-    idealFor: 'Family Trips, Group Travel',
+    type: 'MPV',
+    idealFor: 'Family trips, group travel',
     image: 'https://stimg.cardekho.com/images/carexteriorimages/630x420/Maruti/Ertiga/10288/1755776579514/front-left-side-47.jpg',
-    premium: false
-  },
-  {
-    id: 'fronx',
-    name: 'Maruti Suzuki Fronx CNG',
-    type: 'Mileage Champion',
-    idealFor: 'Long Distance Travel',
-    image: 'https://imgd.aeplcdn.com/1920x1080/n/cw/ec/130591/fronx-exterior-right-front-three-quarter-109.png?isig=0&q=80&q=80',
-    premium: false
+    premium: false,
+    price: 4500,
+    fuelType: 'Petrol + CNG',
+    transmission: 'Manual',
+    seatingCapacity: '7 Seater'
   },
   {
     id: 'taisor',
-    name: 'Toyota Taisor Automatic',
-    type: 'Premium Automatic',
-    idealFor: 'Comfort Driving, City & Highway',
+    name: 'Toyota Taisor Top Model 2026',
+    type: 'SUV / Crossover',
+    idealFor: 'Urban travel, family use',
     image: 'https://cdn.carhp.in/toyota/toyota_taisor_enticing_silver_with_midnight_black.jpg?format=webp&width=800&q=75',
-    premium: false
+    premium: false,
+    price: 3500,
+    fuelType: 'Petrol',
+    transmission: 'Automatic',
+    seatingCapacity: '5 Seater'
+  },
+  {
+    id: 'fronx',
+    name: 'Maruti Suzuki Fronx 2026',
+    type: 'Compact SUV',
+    idealFor: 'City travel, long drives',
+    image: 'https://imgd.aeplcdn.com/1920x1080/n/cw/ec/130591/fronx-exterior-right-front-three-quarter-109.png?isig=0&q=80&q=80',
+    premium: false,
+    price: 3600,
+    fuelType: 'Petrol + CNG',
+    transmission: 'Manual',
+    seatingCapacity: '5 Seater'
   },
   {
     id: 'punch',
-    name: 'Tata Punch',
-    type: 'Compact SUV',
-    idealFor: 'Weekend Trips, Family Travel',
+    name: 'Tata Punch 2025',
+    type: 'Micro SUV',
+    idealFor: 'Everyday driving',
     image: 'https://imgd.aeplcdn.com/664x374/n/cw/ec/172825/punch-exterior-right-front-three-quarter-250.png?isig=0&q=80',
-    premium: false
+    premium: false,
+    price: 2500,
+    fuelType: 'Petrol',
+    transmission: 'Manual',
+    seatingCapacity: '5 Seater'
   },
   {
-    id: 'swift',
-    name: 'Maruti Suzuki Swift',
-    type: 'Economy',
-    idealFor: 'Daily Travel, City Rides',
-    image: 'https://imgd.aeplcdn.com/1200x900/n/cw/ec/159099/swift-exterior-right-front-three-quarter-31.png?isig=0&q=80',
-    premium: false
+    id: 'thar',
+    name: 'Mahindra Thar 4x2 2024',
+    type: 'SUV',
+    idealFor: 'Weekend trips, adventure',
+    image: 'https://stimg.cardekho.com/images/car-images/large/Mahindra/Thar/12264/1759493860311/STEALTH-BLACK_111111.jpg?impolicy=resize&imwidth=420',
+    premium: true,
+    price: 5000,
+    fuelType: 'Diesel',
+    transmission: 'Automatic',
+    seatingCapacity: '4 Seater'
+  },
+  {
+    id: 'thar-roxx',
+    name: 'Mahindra Thar Roxx 5 Door 2026',
+    type: 'SUV',
+    idealFor: 'Family adventures, premium travel',
+    image: 'https://imgd.aeplcdn.com/642x336/n/cw/ec/204996/thar-2025-exterior-right-front-three-quarter-5.png?isig=0&q=80',
+    premium: true,
+    price: 6500,
+    fuelType: 'Diesel',
+    transmission: 'Manual',
+    seatingCapacity: '5 Seater'
+  },
+  {
+    id: 'xuv700',
+    name: 'Mahindra XUV700 Top Model',
+    type: 'Premium SUV',
+    idealFor: 'Luxury family travel',
+    image: 'https://stimg.cardekho.com/images/carexteriorimages/630x420/Mahindra/XUV700/10794/1762509966753/front-left-side-47.jpg',
+    premium: true,
+    price: 8000,
+    fuelType: 'Petrol',
+    transmission: 'Manual',
+    seatingCapacity: '5/7 Seater'
+  },
+  {
+    id: 'scorpio-s11',
+    name: 'Mahindra Scorpio S11 2024',
+    type: 'SUV',
+    idealFor: 'Group travel, highway journeys',
+    image: 'https://imgd.aeplcdn.com/1280x720/n/cw/ec/128413/scorpio-exterior-right-front-three-quarter-2.png?isig=0&q=80',
+    premium: true,
+    price: 5500,
+    fuelType: 'Diesel',
+    transmission: 'Manual',
+    seatingCapacity: '7 Seater'
+  },
+  {
+    id: 'scorpio-n',
+    name: 'Mahindra Scorpio N Z8 2025',
+    type: 'SUV',
+    idealFor: 'Premium road trips',
+    image: 'https://stimg.cardekho.com/images/carexteriorimages/630x420/Mahindra/Scorpio-N/10818/1755775730308/front-left-side-47.jpg',
+    premium: true,
+    price: 7000,
+    fuelType: 'Diesel',
+    transmission: 'Manual',
+    seatingCapacity: '7 Seater'
+  },
+  {
+    id: 'verna',
+    name: 'Hyundai Verna Turbo 2024',
+    type: 'Sedan',
+    idealFor: 'Business travel, city rides',
+    image: 'https://imgd.aeplcdn.com/664x374/n/cw/ec/121943/verna-exterior-right-front-three-quarter-101.jpeg?isig=0&q=80',
+    premium: true,
+    price: 4200,
+    fuelType: 'Petrol',
+    transmission: 'Manual',
+    seatingCapacity: '5 Seater'
+  },
+  {
+    id: 'venue',
+    name: 'Hyundai Venue iMT Turbo 2024',
+    type: 'Compact SUV',
+    idealFor: 'Urban driving, daily use',
+    image: 'https://stimg.cardekho.com/images/carexteriorimages/630x420/Hyundai/Venue/12999/1771931633886/front-left-side-47.jpg?imwidth=420&impolicy=resize',
+    premium: false,
+    price: 4000,
+    fuelType: 'Petrol',
+    transmission: 'iMT',
+    seatingCapacity: '5 Seater'
+  },
+  {
+    id: 'creta',
+    name: 'Hyundai Creta 2025',
+    type: 'SUV',
+    idealFor: 'Family trips, outstation drives',
+    image: 'https://media.zigcdn.com/media/model/2026/Feb/front-1-4-left-1724564915_600x400.jpg',
+    premium: true,
+    price: 4500,
+    fuelType: 'Petrol',
+    transmission: 'Manual',
+    seatingCapacity: '5 Seater'
+  },
+  {
+    id: 'carens',
+    name: 'Kia Carens 2024',
+    type: 'MPV',
+    idealFor: 'Family tours, airport transfer',
+    image: 'https://carkia.in/blog/wp-content/uploads/2025/07/kia-carens-clavis-2025-features-specification-review-1.webp',
+    premium: false,
+    price: 4500,
+    fuelType: 'Petrol',
+    transmission: 'Manual',
+    seatingCapacity: '7 Seater'
   }
 ];
 

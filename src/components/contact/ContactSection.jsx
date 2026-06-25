@@ -47,16 +47,21 @@ export default function ContactSection() {
           className="text-center max-w-3xl mx-auto mb-16 space-y-4"
         >
           <span className="text-xs font-black uppercase tracking-[0.3em] text-accent block">
-            Get In Touch
+            Book Your Self Drive Car in Gurgaon Today
           </span>
           <h2 className="text-4xl sm:text-5xl font-black text-primary tracking-tight">
-            Book Your{' '}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent to-blue-400">Car Today</span>
+            Ready to{' '}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent to-blue-400">Hit the Road?</span>
           </h2>
           <div className="w-16 h-1 bg-gradient-to-r from-accent to-blue-400 mx-auto rounded-full" />
-          <p className="text-sm text-gray-500 font-light leading-relaxed">
-            Reach out for bookings, availability checks, or custom fleet requirements. We respond within minutes.
-          </p>
+          <div className="space-y-3">
+            <p className="text-sm text-gray-500 font-light leading-relaxed">
+              If you are looking for the best self drive car rental in Gurgaon, SUV rental in Gurgaon, 7 seater car rental in Gurgaon, or budget car rental in Delhi NCR, Chinnu Car Rentals is here to help.
+            </p>
+            <p className="text-sm text-gray-500 font-light leading-relaxed">
+              Book your preferred car today and enjoy a smooth, affordable, and comfortable driving experience.
+            </p>
+          </div>
         </motion.div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">

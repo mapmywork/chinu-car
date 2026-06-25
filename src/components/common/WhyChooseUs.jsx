@@ -34,15 +34,15 @@ export default function WhyChooseUs() {
           className="text-center max-w-3xl mx-auto mb-16 space-y-4"
         >
           <span className="text-xs font-black uppercase tracking-[0.3em] text-accent block">
-            Why Chinnu Car Rentals
+            Why Choose Chinnu Car Rentals in Gurgaon?
           </span>
           <h2 className="text-4xl sm:text-5xl font-black text-primary tracking-tight">
-            The Smart{' '}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent to-blue-400">Choice</span>
+            What Makes Us{' '}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent to-blue-400">Different?</span>
           </h2>
           <div className="w-16 h-1 bg-gradient-to-r from-accent to-blue-400 mx-auto rounded-full" />
           <p className="text-sm text-gray-500 font-light leading-relaxed">
-            Gurgaon's most trusted self-drive car rental service, with a premium fleet and unmatched customer care.
+            At Chinnu Car Rentals, we focus on providing reliable, affordable, and premium self drive car rental services in Gurgaon and Delhi NCR. Whether you want a budget hatchback, a premium sedan, a family MPV, or a luxury SUV, we have the right car for every travel requirement.
           </p>
         </motion.div>
 

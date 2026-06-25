@@ -19,7 +19,7 @@ export default function Services() {
             What We Offer
           </span>
           <h2 className="text-4xl sm:text-5xl font-black text-primary tracking-tight">
-            Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent to-blue-400">Premium</span> Services
+            Car Rental <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent to-blue-400">Services</span> We Offer
           </h2>
           <div className="w-16 h-1 bg-gradient-to-r from-accent to-blue-400 mx-auto rounded-full" />
           <p className="text-sm text-gray-500 font-light leading-relaxed">
