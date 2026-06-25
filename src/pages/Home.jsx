@@ -6,6 +6,7 @@ import Services from '../components/services/Services';
 import WhyChooseUs from '../components/common/WhyChooseUs';
 import RentalPlans from '../components/booking/RentalPlans';
 import TestimonialSlider from '../components/testimonials/TestimonialSlider';
+import TrustedByCustomers from '../components/testimonials/TrustedByCustomers';
 import ContactSection from '../components/contact/ContactSection';
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
       <WhyChooseUs />
       <RentalPlans />
       <TestimonialSlider />
+      <TrustedByCustomers />
       <ContactSection />
     </div>
   );

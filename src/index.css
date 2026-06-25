@@ -16,6 +16,13 @@
 
   --shadow-premium: 0 10px 40px -10px rgba(0, 0, 0, 0.1);
   --shadow-glow: 0 4px 20px -2px rgba(0, 102, 204, 0.25);
+
+  --animate-marquee: marquee 30s linear infinite;
+
+  @keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
 }
 
 @layer base {
